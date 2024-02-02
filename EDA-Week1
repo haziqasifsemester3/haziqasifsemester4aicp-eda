@@ -1,0 +1,127 @@
+import numpy as np
+
+
+
+# Q1
+
+print("Task 1:")
+
+array = np.arange(30, 71, 2)
+
+print(array)
+
+
+
+# Q2
+
+print("Task 2:")
+
+array = np.random.randint(low=10, high=33, size=15) #  np.random.normal for float values
+
+print(array)
+
+
+
+# Q3
+
+print("Task 3:")
+
+vector1 = np.array([1, 2, 3])  
+
+vector2 = np.array([4, 5, 6])      
+
+
+
+cross_product = np.cross(vector1, vector2)
+
+print(cross_product)
+
+
+
+# Q4
+
+print("Task 4:")  
+
+# Create a 3x3 matrix
+
+matrix = np.array([[1, 2, 3],
+
+                   [4, 5, 6],
+
+                   [7, 8, 7]])
+
+
+
+
+
+determinant_value = np.linalg.det(matrix)
+
+print("Determinant:", determinant_value)
+
+
+
+# Q5
+
+print("Task 5:")
+
+random_int_array = np.random.randint(low=0, high=10, size=(3, 3, 3))  # np.random.normal for float values
+
+
+
+print("Random 3x3x3 Array:")
+
+print(random_int_array)
+
+
+
+# Q6
+
+print("Task 6:")
+
+random_5x5_array = np.random.randint(low=0, high=100, size=(5, 5))
+
+
+
+min_value = np.min(random_5x5_array)
+
+max_value = np.max(random_5x5_array)
+
+
+
+print("Random 5x5 Array:")
+
+print(random_5x5_array)
+
+print("Minimum Value:", min_value)
+
+print("Maximum Value:", max_value)
+
+
+
+# Q7
+
+print("Task 7:")
+
+# Create a sample array
+
+array = np.array([[1, 2, 3],
+
+                  [4, 5, 6],
+
+                  [7, 8, 9]])
+
+
+
+mean_values = np.mean(array, axis=1) #mean
+
+std_values = np.std(array, axis=1) #standard deviation
+
+var_values = np.var(array, axis=1) #variance
+
+
+
+print("Mean along second axis:", mean_values)
+
+print("Standard Deviation along second axis:", std_values)
+
+print("Variance along second axis:", var_values)
